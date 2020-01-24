@@ -1,2 +1,2 @@
-# Chat_CLIENT_CODE
+# Chat_client_CODE
 Клиент чата подключаемого по адресу localhost:8189
