@@ -4,13 +4,13 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -61,6 +61,14 @@ public class Controller {
             @Override
             public void run() {
                 Label message = new Label(str);
+
+                //color background
+                BackgroundFill backgroundFill = new BackgroundFill(Color.rgb(0, 136, 204),
+                        new CornerRadii(5), Insets.EMPTY);
+                Background background = new Background(backgroundFill);
+                message.setBackground(background);
+//                message.setOpacity(0.5);
+                message.setTextFill(Color.WHITE);
                 VBox messageBox = new VBox(message);
                 if (nick != "") {
                     String[] mass = str.split(":");
