@@ -1,0 +1,17 @@
+#btn1 {
+    -fx-background-image: url("../img/baseline_send_black_48dp.png");
+    -fx-background-size: 100%;
+    -fx-background-color: transparent;
+}
+
+#btn1:hover {
+    -fx-background-color: #0088cc;
+    -fx-background-radius: 15;
+    -fx-background-image: url("../img/baseline_send_white_48dp.png");
+}
+
+#textField {
+    -fx-background-radius: 15;
+    /*-fx-background-color: transparent;*/
+    -fx-font-family: "Lucida Sans Unicode";
+}

@@ -1,0 +1,17 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<!--    <stylesheets><URL value="@/css/Style.css"/></stylesheets>-->
+
+    <Label fx:id="label1" text="Служебные команды:"/>
+    <Label fx:id="label2" text="/end - Позволяет выйти из чата"/>
+    <Label fx:id="label3" text="/w nickname message - Позволяет отправить личное сообщение конкретному пользователю"/>
+    <Label fx:id="label4" text="/blacklist nickname - Позволяет заблокировать конкретного пользователя"/>
+
+    <padding>
+        <Insets left="10.0" top="10.0"/>
+    </padding>
+</VBox>
