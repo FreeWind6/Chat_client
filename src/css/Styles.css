@@ -15,3 +15,8 @@
     /*-fx-background-color: transparent;*/
     -fx-font-family: "Lucida Sans Unicode";
 }
+
+#messagesView .list-cell {
+    /*    -fx-background-image: url("../img/code.png");*/
+    /*    -fx-background-size: 100%;*/
+}

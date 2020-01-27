@@ -9,12 +9,10 @@ import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import javax.swing.text.Style;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -32,7 +30,7 @@ public class Controller {
     DataInputStream in;
     DataOutputStream out;
 
-    final String IP_ADPRESS = "localhost";
+    final String IP_ADDRESS = "localhost";
     final int PORT = 8189;
 
     @FXML
@@ -77,6 +75,7 @@ public class Controller {
                     }
                 }
                 messagesView.getItems().add(messageBox);
+//                messagesView.setStyle("-fx-control-inner-background: blue;");
             }
         });
     }
@@ -103,7 +102,7 @@ public class Controller {
 
     public void connect() {
         try {
-            socket = new Socket(IP_ADPRESS, PORT);
+            socket = new Socket(IP_ADDRESS, PORT);
             in = new DataInputStream(socket.getInputStream());
             out = new DataOutputStream(socket.getOutputStream());
 
