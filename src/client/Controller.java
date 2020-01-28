@@ -53,29 +53,40 @@ public class Controller {
     @FXML
     ListView messagesView;
     String nick = "";
+    Color color;
 
     public void setMsg(String str) {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                Label message = new Label(str);
-
-                //color background
-                BackgroundFill backgroundFill = new BackgroundFill(Color.rgb(0, 136, 204),
-                        new CornerRadii(5), Insets.EMPTY);
-                Background background = new Background(backgroundFill);
-                message.setBackground(background);
-//                message.setOpacity(0.5);
-                message.setTextFill(Color.WHITE);
+                Label message = new Label("  " + str + "  ");
+                // Стартовый цвет до авторизации
+                color = Color.GRAY;
                 VBox messageBox = new VBox(message);
                 if (nick != "") {
                     String[] mass = str.split(":");
                     if (nick.equalsIgnoreCase(mass[0])) {
+                        color = Color.rgb(0, 136, 204);
                         messageBox.setAlignment(Pos.CENTER_RIGHT);
+                    } else {
+                        color = Color.GRAY;
                     }
                 }
+                setColorMsg(message);
                 messagesView.getItems().add(messageBox);
 //                messagesView.setStyle("-fx-control-inner-background: blue;");
+            }
+
+            private void setColorMsg(Label message) {
+                //color background
+                BackgroundFill backgroundFill;
+                Background background;
+                backgroundFill = new BackgroundFill(color,
+                        new CornerRadii(5), Insets.EMPTY);
+                background = new Background(backgroundFill);
+                message.setBackground(background);
+//                message.setOpacity(0.5);
+                message.setTextFill(Color.WHITE);
             }
         });
     }
