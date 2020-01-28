@@ -17,6 +17,10 @@
 }
 
 #messagesView .list-cell {
-    /*    -fx-background-image: url("../img/code.png");*/
-    /*    -fx-background-size: 100%;*/
+}
+
+#messagesView {
+    -fx-background-image: url("../img/code.png");
+    -fx-background-size: 100% 100%;
+    /*-fx-background-color: transparent;*/
 }

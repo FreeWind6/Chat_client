@@ -9,14 +9,19 @@ import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.net.URL;
 
 
 public class Controller {
@@ -52,6 +57,7 @@ public class Controller {
 
     @FXML
     ListView messagesView;
+
     String nick = "";
     Color color;
 
@@ -60,6 +66,9 @@ public class Controller {
             @Override
             public void run() {
                 Label message = new Label("  " + str + "  ");
+/*                BackgroundImage backgroundImage = new BackgroundImage(new Image("file:src/img/code.png"), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+                Background background = new Background(backgroundImage);
+                messagesView.setBackground(background);*/
                 // Стартовый цвет до авторизации
                 color = Color.GRAY;
                 VBox messageBox = new VBox(message);
@@ -74,7 +83,6 @@ public class Controller {
                 }
                 setColorMsg(message);
                 messagesView.getItems().add(messageBox);
-//                messagesView.setStyle("-fx-control-inner-background: blue;");
             }
 
             private void setColorMsg(Label message) {
@@ -109,7 +117,6 @@ public class Controller {
             clientList.setManaged(true);
         }
     }
-
 
     public void connect() {
         try {
@@ -213,28 +220,34 @@ public class Controller {
     }
 
     public void info() throws IOException {
-//        Image imageInfo = new Image("file:images/info.jpg");
         Stage infoWindow = new Stage();
 
         Parent rootInfo = FXMLLoader.load(getClass().getResource("info.fxml"));
         infoWindow.setTitle("Info");
-//        infoWindow.getIcons().add(imageInfo);
+        infoWindow.getIcons().add(new Image("img/icon1.png"));
         infoWindow.setScene(new Scene(rootInfo, 550, 100));
         infoWindow.show();
     }
 
     public void about() throws IOException {
-//        Image imageInfo = new Image("file:images/about.png");
         Stage infoWindow = new Stage();
 
         Parent rootInfo = FXMLLoader.load(getClass().getResource("about.fxml"));
         infoWindow.setTitle("About");
-//        infoWindow.getIcons().add(imageInfo);
-        infoWindow.setScene(new Scene(rootInfo, 350, 100));
+        infoWindow.getIcons().add(new Image("img/icon1.png"));
+        infoWindow.setScene(new Scene(rootInfo, 250, 100));
         infoWindow.show();
     }
 
     public void clearWindow() {
         messagesView.getItems().clear();
+    }
+
+    public void btnClick() {
+        try {
+            Desktop.getDesktop().browse(new URL("https://github.com/FreeWind6/Chat_client").toURI());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
