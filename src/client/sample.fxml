@@ -21,7 +21,7 @@
     </stylesheets>
     <MenuBar>
         <Menu mnemonicParsing="false" text="Info">
-            <MenuItem mnemonicParsing="false" text="Commands" fx:id="command" onAction="#info"/>
+            <MenuItem mnemonicParsing="false" text="Commands" fx:id="command" onAction="#commands"/>
             <MenuItem mnemonicParsing="false" text="Clear window" fx:id="clear" onAction="#clearWindow"/>
         </Menu>
         <Menu mnemonicParsing="false" text="About">
@@ -45,15 +45,3 @@
         <ListView fx:id="clientList" managed="false" visible="false" maxWidth="100"></ListView>
     </HBox>
 </VBox>
-
-
-        <!--<HBox VBox.vgrow="ALWAYS">-->
-        <!--<VBox HBox.hgrow="ALWAYS">-->
-        <!--<TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS" />-->
-        <!--<HBox fx:id="bottomPanel" managed="false" visible="false">-->
-        <!--<TextField fx:id="textField" onAction="#sendMsg" promptText="Введите текст" HBox.hgrow="ALWAYS" />-->
-        <!--<Button fx:id="btn1" onAction="#sendMsg" text="Send" />-->
-        <!--</HBox>-->
-        <!--</VBox>-->
-        <!--<ListView fx:id="clientList" managed="false" onMouseClicked="#selectClient" visible="false"></ListView>-->
-        <!--</HBox>-->

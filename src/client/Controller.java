@@ -1,6 +1,8 @@
 package client;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
@@ -208,35 +211,54 @@ public class Controller {
         }
     }
 
-    public void Dispose() {
-        System.out.println("Отправляем сообщение на сервер о завершении работы");
-        try {
-            if (out != null) {
-                out.writeUTF("/end");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    public void commands() throws IOException {
+        Stage infoStage = new Stage();
 
-    public void info() throws IOException {
-        Stage infoWindow = new Stage();
+        // создаем список объектов
+        ObservableList<InfoTable> info = FXCollections.observableArrayList(
 
-        Parent rootInfo = FXMLLoader.load(getClass().getResource("info.fxml"));
-        infoWindow.setTitle("Info");
-        infoWindow.getIcons().add(new Image("img/icon1.png"));
-        infoWindow.setScene(new Scene(rootInfo, 550, 100));
-        infoWindow.show();
+                new InfoTable("/end", "Выход из программы", "/end"),
+                new InfoTable("/w nickname Hi", "Отправить личное сообщение пользователю nickname", "/w Vasya Привет!"),
+                new InfoTable("/blacklist nickname", "Заблокировать пользователя nickname", "/blacklist Vasya")
+        );
+        // определяем таблицу и устанавливаем данные
+        TableView<InfoTable> table = new TableView<>(info);
+        table.setPrefWidth(550);
+        table.setPrefHeight(250);
+
+        // столбец для вывода Command
+        TableColumn<InfoTable, String> commandColumn = new TableColumn<>("Command");
+        // определяем фабрику для столбца с привязкой к свойству command
+        commandColumn.setCellValueFactory(new PropertyValueFactory<>("command"));
+        // добавляем столбец
+        table.getColumns().add(commandColumn);
+
+        TableColumn<InfoTable, Integer> descriptionColumn = new TableColumn<>("Description");
+        descriptionColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
+        table.getColumns().add(descriptionColumn);
+
+        TableColumn<InfoTable, Integer> exampleColumn = new TableColumn<>("Example");
+        exampleColumn.setCellValueFactory(new PropertyValueFactory<>("example"));
+        table.getColumns().add(exampleColumn);
+
+        FlowPane root = new FlowPane(10, 10, table);
+
+        Scene scene = new Scene(root, 550, 100);
+
+        infoStage.setScene(scene);
+        infoStage.setTitle("Commands");
+        infoStage.getIcons().add(new Image("img/icon1.png"));
+        infoStage.show();
     }
 
     public void about() throws IOException {
-        Stage infoWindow = new Stage();
+        Stage aboutStage = new Stage();
 
         Parent rootInfo = FXMLLoader.load(getClass().getResource("about.fxml"));
-        infoWindow.setTitle("About");
-        infoWindow.getIcons().add(new Image("img/icon1.png"));
-        infoWindow.setScene(new Scene(rootInfo, 250, 100));
-        infoWindow.show();
+        aboutStage.setTitle("About");
+        aboutStage.getIcons().add(new Image("img/icon1.png"));
+        aboutStage.setScene(new Scene(rootInfo, 250, 100));
+        aboutStage.show();
     }
 
     public void clearWindow() {
@@ -247,6 +269,17 @@ public class Controller {
         try {
             Desktop.getDesktop().browse(new URL("https://github.com/FreeWind6/Chat_client").toURI());
         } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void Dispose() {
+        System.out.println("Отправляем сообщение на сервер о завершении работы");
+        try {
+            if (out != null) {
+                out.writeUTF("/end");
+            }
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
