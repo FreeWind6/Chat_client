@@ -17,6 +17,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.awt.*;
@@ -25,6 +27,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class Controller {
@@ -63,33 +67,39 @@ public class Controller {
 
     String nick = "";
     Color color;
+    Date date;
 
     public void setMsg(String str) {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
+                date = new Date();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
                 Label message = new Label("  " + str + "  ");
+                Label time = new Label("\n" + simpleDateFormat.format(date) + "  ", message);
+                time.setFont(new Font(10));
 /*                BackgroundImage backgroundImage = new BackgroundImage(new Image("file:src/img/code.png"), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
                 Background background = new Background(backgroundImage);
                 messagesView.setBackground(background);*/
                 // Стартовый цвет до авторизации
                 color = Color.GRAY;
-                VBox messageBox = new VBox(message);
+                VBox messageBox = new VBox(time);
                 if (nick != "") {
                     String[] mass = str.split(":");
                     if (nick.equalsIgnoreCase(mass[0])) {
                         color = Color.rgb(0, 136, 204);
                         messageBox.setAlignment(Pos.CENTER_RIGHT);
+//                        message.setText(mass[1]); и 2 параметром в split добавь лимит:2
                     } else {
                         color = Color.GRAY;
                     }
                 }
                 setColorMsg(message);
+                setColorMsg(time);
                 messagesView.getItems().add(messageBox);
             }
 
             private void setColorMsg(Label message) {
-                //color background
                 BackgroundFill backgroundFill;
                 Background background;
                 backgroundFill = new BackgroundFill(color,
@@ -184,6 +194,7 @@ public class Controller {
                 }
             }).start();
         } catch (IOException e) {
+            setMsg("Server is not available");
             e.printStackTrace();
         }
     }
