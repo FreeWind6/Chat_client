@@ -17,7 +17,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
@@ -73,6 +72,7 @@ public class Controller {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
+//                alertMsg("Ошибка!");
                 date = new Date();
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
                 Label message = new Label("  " + str + "  ");
@@ -110,6 +110,16 @@ public class Controller {
                 message.setTextFill(Color.WHITE);
             }
         });
+    }
+
+    private void alertMsg(String msg) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error!");
+        alert.setHeaderText(null);
+        alert.setContentText(msg);
+        Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+        stage.getIcons().add(new Image("img/icon1.png"));
+        alert.showAndWait();
     }
 
     public void setAuthorized(boolean isAuthorized) {
@@ -195,6 +205,8 @@ public class Controller {
             }).start();
         } catch (IOException e) {
             setMsg("Server is not available");
+            loginField.clear();
+            passwordField.clear();
             e.printStackTrace();
         }
     }
