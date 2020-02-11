@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="881cf217-9c7a-4940-852d-6e6c9146904e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/spring_security_core_5_2_2_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/client_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/client_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat_client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/client_jar/client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="K:/Browser/spring-security-core-5.2.2.RELEASE.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -67,14 +64,7 @@
       <recent name="C:\Users\Dmitry\Desktop\KubyshkinGB\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.client.jar">
-    <configuration name="AdvancedEncryptionStandard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Crypt.AdvancedEncryptionStandard" />
-      <module name="client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JAR Application.Chat_client.jar">
     <configuration name="AdvancedEncryptionStandard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.AdvancedEncryptionStandard" />
       <module name="client" />
@@ -90,7 +80,7 @@
     </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Crypt.Main" />
-      <module name="client" />
+      <module name="Chat_client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Crypt.*" />
@@ -103,7 +93,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Main" />
-      <module name="client" />
+      <module name="Chat_client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Crypt.*" />
@@ -116,7 +106,7 @@
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Crypt.Test" />
-      <module name="client" />
+      <module name="Chat_client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Crypt.*" />
@@ -127,25 +117,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Chat_client.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Chat_client_jar/Chat_client.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="client.jar" type="JarApplication" singleton="false" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/client_jar/client.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Chat_client" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Chat_client" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.AdvancedEncryptionStandard" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="JAR Application.client.jar" />
+      <item itemvalue="JAR Application.Chat_client.jar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Chat_client.jar" />
         <item itemvalue="JAR Application.client.jar" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.AdvancedEncryptionStandard" />
       </list>
     </recent_temporary>
   </component>
@@ -212,6 +253,7 @@
       <workItem from="1581418724242" duration="3394000" />
       <workItem from="1581422290484" duration="1250000" />
       <workItem from="1581423798436" duration="8335000" />
+      <workItem from="1581445072235" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA files">
       <created>1579856056266</created>
@@ -311,10 +353,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580390459654" />
-    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581431713910">
+    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581445283827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581431713910" />
+    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581445283827" />
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580227535249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -339,22 +381,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="414" width="276" height="271" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579855722244" />
-    <state width="916" height="275" key="GridCell.Tab.0.bottom" timestamp="1581432139601">
+    <state width="914" height="266" key="GridCell.Tab.0.bottom" timestamp="1581445311720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139601" />
-    <state width="916" height="275" key="GridCell.Tab.0.center" timestamp="1581432139601">
+    <state width="914" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
+    <state width="914" height="266" key="GridCell.Tab.0.center" timestamp="1581445311720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139601" />
-    <state width="916" height="275" key="GridCell.Tab.0.left" timestamp="1581432139601">
+    <state width="914" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
+    <state width="914" height="266" key="GridCell.Tab.0.left" timestamp="1581445311720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139601" />
-    <state width="916" height="275" key="GridCell.Tab.0.right" timestamp="1581432139601">
+    <state width="914" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
+    <state width="914" height="266" key="GridCell.Tab.0.right" timestamp="1581445311720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139601" />
+    <state width="914" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
     <state width="914" height="345" key="GridCell.Tab.1.bottom" timestamp="1581432139599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -371,10 +413,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139599" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1581431976153">
+    <state x="440" y="95" key="SettingsEditor" timestamp="1581445292417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581431976153" />
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581445292417" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581416873851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
