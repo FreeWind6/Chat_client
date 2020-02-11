@@ -1,4 +1,4 @@
-# Chat_client
+# Chat Client
 Клиент чата подключаемого по адресу localhost:8189
 
 ![screenshot chat](https://github.com/FreeWind6/Chat_client/blob/master/inform.png)
