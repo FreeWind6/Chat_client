@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/client_jar</output-path>
     <root id="archive" name="client.jar">
       <element id="module-output" name="client" />
+      <element id="extracted-dir" path="K:/Browser/spring-security-core-5.2.2.RELEASE.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

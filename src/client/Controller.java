@@ -20,6 +20,8 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import org.springframework.security.crypto.encrypt.Encryptors;
+import org.springframework.security.crypto.encrypt.TextEncryptor;
 
 import java.awt.*;
 import java.io.DataInputStream;
@@ -77,6 +79,10 @@ public class Controller {
     Label time;
     VBox messageBox;
     ArrayList arrayListMessage = new ArrayList();
+    final String password = "MZygpewJsCpRrfOr";
+    //    String salt = KeyGenerators.string().generateKey();
+    String salt = "6eda6a88846ad4cb";
+    TextEncryptor encryptors = Encryptors.text(password, salt);
 
     public void setMsg(String str) {
         Platform.runLater(new Runnable() {
@@ -165,6 +171,7 @@ public class Controller {
                     try {
                         while (true) {
                             String str = in.readUTF();
+                            str = encryptors.decrypt(str);
                             if (str.startsWith("/authok")) {
                                 String[] mass = str.split(" ");
                                 nick = mass[1];
@@ -177,6 +184,7 @@ public class Controller {
 
                         while (true) {
                             String str = in.readUTF();
+                            str = encryptors.decrypt(str);
                             if (str.equals("/serverclosed")) break;
                             if (str.startsWith("/clientlist")) {
                                 String[] tokens = str.split(" ");
@@ -225,7 +233,9 @@ public class Controller {
 
     public void sendMsg() {
         try {
-            out.writeUTF(textField.getText());
+            String textToEncrypt = textField.getText();
+            String cipherText = encryptors.encrypt(textToEncrypt);
+            out.writeUTF(cipherText);
             textField.clear();
             textField.requestFocus();
         } catch (IOException e) {
@@ -238,7 +248,9 @@ public class Controller {
             connect();
         }
         try {
-            out.writeUTF("/auth " + loginField.getText() + " " + passwordField.getText());
+            String textToEncrypt = "/auth " + loginField.getText() + " " + passwordField.getText();
+            String cipherText = encryptors.encrypt(textToEncrypt);
+            out.writeUTF(cipherText);
             loginField.clear();
             passwordField.clear();
         } catch (IOException e) {
@@ -313,7 +325,9 @@ public class Controller {
         System.out.println("Отправляем сообщение на сервер о завершении работы");
         try {
             if (out != null) {
-                out.writeUTF("/end");
+                String textToEncrypt = "/end";
+                String cipherText = encryptors.encrypt(textToEncrypt);
+                out.writeUTF(cipherText);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -340,7 +354,9 @@ public class Controller {
 
     public void logOut(ActionEvent actionEvent) {
         try {
-            out.writeUTF("/end");
+            String textToEncrypt = "/end";
+            String cipherText = encryptors.encrypt(textToEncrypt);
+            out.writeUTF(cipherText);
         } catch (IOException e) {
             e.printStackTrace();
         }
