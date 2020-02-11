@@ -10,9 +10,10 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
@@ -23,10 +24,12 @@ import javafx.stage.Stage;
 import java.awt.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 
@@ -64,26 +67,33 @@ public class Controller {
     @FXML
     ListView messagesView;
 
+    @FXML
+    MenuItem logOut;
+
     String nick = "";
     Color color;
     Date date;
+    Label message;
+    Label time;
+    VBox messageBox;
+    ArrayList arrayListMessage = new ArrayList();
 
     public void setMsg(String str) {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-//                alertMsg("Ошибка!");
                 date = new Date();
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
-                Label message = new Label("  " + str + "  ");
-                Label time = new Label("\n" + simpleDateFormat.format(date) + "  ", message);
+                message = new Label("  " + str + "  ");
+                time = new Label("\n" + simpleDateFormat.format(date) + "  ", message);
                 time.setFont(new Font(10));
+                arrayListMessage.add(message.getText() + time.getText().replaceAll("\n", " "));
 /*                BackgroundImage backgroundImage = new BackgroundImage(new Image("file:src/img/code.png"), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
                 Background background = new Background(backgroundImage);
                 messagesView.setBackground(background);*/
                 // Стартовый цвет до авторизации
                 color = Color.GRAY;
-                VBox messageBox = new VBox(time);
+                messageBox = new VBox(time);
                 if (nick != "") {
                     String[] mass = str.split(":");
                     if (nick.equalsIgnoreCase(mass[0])) {
@@ -112,9 +122,9 @@ public class Controller {
         });
     }
 
-    private void alertMsg(String msg) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle("Error!");
+    private void alertMsg(String msg, String title, Alert.AlertType alertType) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(msg);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
@@ -131,6 +141,7 @@ public class Controller {
             bottomPanel.setManaged(false);
             clientList.setVisible(false);
             clientList.setManaged(false);
+            logOut.setVisible(false);
         } else {
             upperPanel.setVisible(false);
             upperPanel.setManaged(false);
@@ -138,6 +149,7 @@ public class Controller {
             bottomPanel.setManaged(true);
             clientList.setVisible(true);
             clientList.setManaged(true);
+            logOut.setVisible(true);
         }
     }
 
@@ -286,6 +298,7 @@ public class Controller {
 
     public void clearWindow() {
         messagesView.getItems().clear();
+        arrayListMessage.clear();
     }
 
     public void btnClick() {
@@ -302,6 +315,32 @@ public class Controller {
             if (out != null) {
                 out.writeUTF("/end");
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveMsg(ActionEvent actionEvent) throws IOException {
+        FileWriter fileWriter = new FileWriter("text.txt");
+        for (int i = 0; i < arrayListMessage.size(); i++) {
+            String listMsg = arrayListMessage.get(i).toString();
+            if (this.nick != "" & listMsg.startsWith("  " + this.nick)) {
+                listMsg = "*" + listMsg;
+            }
+
+            fileWriter.append(listMsg + "\n");
+//            System.out.println(listMsg);
+        }
+        fileWriter.append("\n-------------------------\n" +
+                "Ваши сообщения помечены звездочкой \n" +
+                "Ваш ник: " + this.nick);
+        fileWriter.close();
+        alertMsg("История сохранена в файл text.txt и находится в той же директории что и исходный файл.", "Файл записан!", Alert.AlertType.INFORMATION);
+    }
+
+    public void logOut(ActionEvent actionEvent) {
+        try {
+            out.writeUTF("/end");
         } catch (IOException e) {
             e.printStackTrace();
         }
