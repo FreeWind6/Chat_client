@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="client:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="881cf217-9c7a-4940-852d-6e6c9146904e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/client_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/client_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/client_jar/client.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="ee7410e5-d77f-49ad-b18e-f97272c2cc48" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,20 +10,24 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="java_2_09122019" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1WpeSk9koJTvzglmHOjwi36bLLD" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xn8BpJBtjqrEQyA9hp8VzrqZ1E" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -42,404 +35,76 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="K:/Browser/spring-security-core-5.2.2.RELEASE.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Crypt" />
-      <recent name="client" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dmitry\Desktop\1\11\Chat_client\src\main\resources" />
+      <recent name="C:\Users\Dmitry\Desktop\1\11\Chat_client\src\main\java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dmitry\Desktop\Chat_client\src\img" />
-      <recent name="C:\Users\Dmitry\Desktop\Chat_client\src\client" />
-      <recent name="C:\Users\Dmitry\Desktop\Chat\src\css" />
-      <recent name="C:\Users\Dmitry\Desktop\Chat\src\img" />
-      <recent name="C:\Users\Dmitry\Desktop\KubyshkinGB\src" />
+      <recent name="C:\Users\Dmitry\Desktop\1\11\Chat_client" />
+      <recent name="C:\Users\Dmitry\Desktop\1\11\Chat_client\src\main\resources" />
+      <recent name="C:\Users\Dmitry\Desktop\1\11\Chat_client\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Chat_client.jar">
-    <configuration name="AdvancedEncryptionStandard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.AdvancedEncryptionStandard" />
-      <module name="client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Crypt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Crypt.Main" />
+  <component name="RunManager" selected="JAR Application.Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Chat_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Crypt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.Main" />
-      <module name="Chat_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Crypt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Crypt.Test" />
-      <module name="Chat_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Crypt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Chat_client.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Chat_client_jar/Chat_client.jar" />
+    <configuration name="Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <method v="2" />
     </configuration>
-    <configuration name="client.jar" type="JarApplication" singleton="false" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/client_jar/client.jar" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Chat_client" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Chat_client" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JAR Application.client.jar" />
-      <item itemvalue="JAR Application.Chat_client.jar" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Chat_client.jar" />
-        <item itemvalue="JAR Application.client.jar" />
+        <item itemvalue="JAR Application.Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="881cf217-9c7a-4940-852d-6e6c9146904e" name="Default Changelist" comment="" />
-      <created>1579850965076</created>
+      <changelist id="ee7410e5-d77f-49ad-b18e-f97272c2cc48" name="Default Changelist" comment="" />
+      <created>1581670364983</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579850965076</updated>
-      <workItem from="1579850968271" duration="57000" />
-      <workItem from="1579851151498" duration="1014000" />
-      <workItem from="1579852490586" duration="564000" />
-      <workItem from="1579853085007" duration="87000" />
-      <workItem from="1579853189602" duration="847000" />
-      <workItem from="1579854307568" duration="548000" />
-      <workItem from="1579855031928" duration="502000" />
-      <workItem from="1579855571891" duration="152000" />
-      <workItem from="1579855919025" duration="244000" />
-      <workItem from="1579856644677" duration="333000" />
-      <workItem from="1579858061888" duration="104000" />
-      <workItem from="1579868585831" duration="7000" />
-      <workItem from="1579880837222" duration="614000" />
-      <workItem from="1579882247681" duration="191000" />
-      <workItem from="1579882451750" duration="42000" />
-      <workItem from="1579882909474" duration="8000" />
-      <workItem from="1579883167204" duration="1272000" />
-      <workItem from="1579884528706" duration="986000" />
-      <workItem from="1579944453563" duration="11000" />
-      <workItem from="1580040552136" duration="157000" />
-      <workItem from="1580161742736" duration="100000" />
-      <workItem from="1580208655296" duration="2176000" />
-      <workItem from="1580210866653" duration="109000" />
-      <workItem from="1580211906860" duration="13419000" />
-      <workItem from="1580225529750" duration="2501000" />
-      <workItem from="1580383847656" duration="7467000" />
-      <workItem from="1580396076901" duration="5000" />
-      <workItem from="1580396964646" duration="284000" />
-      <workItem from="1580403716948" duration="20000" />
-      <workItem from="1580583352380" duration="1800000" />
-      <workItem from="1580716771136" duration="12000" />
-      <workItem from="1580834194789" duration="148000" />
-      <workItem from="1581329967425" duration="302000" />
-      <workItem from="1581331207374" duration="45000" />
-      <workItem from="1581338257290" duration="13000" />
-      <workItem from="1581407494974" duration="9072000" />
-      <workItem from="1581416773362" duration="439000" />
-      <workItem from="1581417441907" duration="1093000" />
-      <workItem from="1581418724242" duration="3394000" />
-      <workItem from="1581422290484" duration="1250000" />
-      <workItem from="1581423798436" duration="8335000" />
-      <workItem from="1581445072235" duration="221000" />
+      <updated>1581670364983</updated>
+      <workItem from="1581670368310" duration="1102000" />
     </task>
-    <task id="LOCAL-00001" summary="IDEA files">
-      <created>1579856056266</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1579856056266</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Changed README.md">
-      <created>1579856966707</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1579856966707</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Add color background">
-      <created>1579882483243</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1579882483243</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add background color another chat member">
-      <created>1580210809097</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1580210809097</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update build jar file">
-      <created>1580210956706</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1580210956706</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add icon, added link to the source code">
-      <created>1580225318197</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1580225318197</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Updated the Commands window">
-      <created>1580228020084</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1580228020084</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Add time message and message &quot;server is not available&quot;">
-      <created>1580391311508</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1580391311508</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Add Tooltip login and password and alertMsg()">
-      <created>1580585137518</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1580585137518</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Bugs fixed&#10;Added chat save feature&#10;Account Logout Button Added">
-      <created>1581416868987</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1581416868987</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="IDEA files" />
-    <MESSAGE value="Changed README.md" />
-    <MESSAGE value="Add color background" />
-    <MESSAGE value="Add background color another chat member" />
-    <MESSAGE value="Update build jar file" />
-    <MESSAGE value="Add icon, added link to the source code" />
-    <MESSAGE value="Updated the Commands window" />
-    <MESSAGE value="Add time message and message &quot;server is not available&quot;" />
-    <MESSAGE value="Add Tooltip login and password and alertMsg()" />
-    <MESSAGE value="Bugs fixed&#10;Added chat save feature&#10;Account Logout Button Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugs fixed&#10;Added chat save feature&#10;Account Logout Button Added" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580208862149">
+    <state width="916" height="281" key="GridCell.Tab.0.bottom" timestamp="1581671632266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580208862149" />
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1580390459654">
+    <state width="916" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
+    <state width="916" height="281" key="GridCell.Tab.0.center" timestamp="1581671632266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580390459654" />
-    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581445283827">
+    <state width="916" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
+    <state width="916" height="281" key="GridCell.Tab.0.left" timestamp="1581671632266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="304" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581445283827" />
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580227535249">
+    <state width="916" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
+    <state width="916" height="281" key="GridCell.Tab.0.right" timestamp="1581671632266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580227535249" />
-    <state x="794" y="144" key="CommitChangelistDialog2" timestamp="1581432429405">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="144" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581432429405" />
-    <state x="714" y="236" key="DetectedRootsChooserDialog" timestamp="1581407687581">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="714" y="236" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581407687581" />
-    <state x="184" y="92" key="DiffContextDialog" timestamp="1581432390770">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581432390770" />
-    <state x="666" y="262" key="FileChooserDialogImpl" timestamp="1581425124514">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="666" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581425124514" />
-    <state x="822" y="414" width="276" height="271" key="Github.ShareDialog" timestamp="1579855722244">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="822" y="414" width="276" height="271" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579855722244" />
-    <state width="914" height="266" key="GridCell.Tab.0.bottom" timestamp="1581445311720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
-    <state width="914" height="266" key="GridCell.Tab.0.center" timestamp="1581445311720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
-    <state width="914" height="266" key="GridCell.Tab.0.left" timestamp="1581445311720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
-    <state width="914" height="266" key="GridCell.Tab.0.right" timestamp="1581445311720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581445311720" />
-    <state width="914" height="345" key="GridCell.Tab.1.bottom" timestamp="1581432139599">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139599" />
-    <state width="914" height="345" key="GridCell.Tab.1.center" timestamp="1581432139598">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139598" />
-    <state width="914" height="345" key="GridCell.Tab.1.left" timestamp="1581432139598">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139598" />
-    <state width="914" height="345" key="GridCell.Tab.1.right" timestamp="1581432139599">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581432139599" />
-    <state x="440" y="95" key="SettingsEditor" timestamp="1581445292417">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581445292417" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1581416873851">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581416873851" />
-    <state x="690" y="290" key="extract.method.dialog" timestamp="1580584100434">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="290" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580584100434" />
-    <state x="761" y="312" key="git4idea.merge.GitMergeDialog" timestamp="1579856667507">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="761" y="312" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579856667507" />
-    <state width="470" height="532" key="javadoc.popup.new" timestamp="1581422499503">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="470" height="532" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1581422499503" />
-    <state x="342" y="216" key="new project wizard" timestamp="1581431899083">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="342" y="216" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1581431899083" />
-    <state x="702" y="149" key="refactoring.ChangeSignatureDialog" timestamp="1580387631222">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="702" y="149" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580387631222" />
+    <state width="916" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
   </component>
 </project>

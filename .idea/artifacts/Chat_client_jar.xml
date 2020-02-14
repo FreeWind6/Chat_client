@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Chat_client:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Chat_client_jar</output-path>
-    <root id="archive" name="Chat_client.jar">
-      <element id="module-output" name="Chat_client" />
-      <element id="extracted-dir" path="K:/Browser/spring-security-core-5.2.2.RELEASE.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>

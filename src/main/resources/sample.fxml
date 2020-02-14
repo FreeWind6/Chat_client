@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<?scenebuilder-stylesheet /css/Styles.css?>
+<?import java.net.URL?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121"
+      fx:controller="Controller">
+    <stylesheets>
+        <URL value="@/css/Styles.css"/>
+    </stylesheets>
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Info" fx:id="menu">
+            <MenuItem mnemonicParsing="false" text="Commands" fx:id="command" onAction="#commands"/>
+            <MenuItem mnemonicParsing="false" text="Clear window" fx:id="clear" onAction="#clearWindow"/>
+            <MenuItem mnemonicParsing="false" text="Save messages" fx:id="saveMsg" onAction="#saveMsg"/>
+            <MenuItem mnemonicParsing="false" text="Log out" fx:id="logOut" onAction="#logOut" visible="false"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="About">
+            <MenuItem mnemonicParsing="false" text="About" fx:id="about" onAction="#about"/>
+        </Menu>
+    </MenuBar>
+    <HBox fx:id="upperPanel">
+        <TextField HBox.hgrow="ALWAYS" promptText="Логин" fx:id="loginField"></TextField>
+        <PasswordField promptText="Пароль" fx:id="passwordField" onAction="#tryToAuth"/>
+        <Button text="Авторизоваться" onAction="#tryToAuth"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <VBox HBox.hgrow="ALWAYS">
+            <!--            <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS"/>-->
+            <ListView fx:id="messagesView" editable="false" VBox.vgrow="ALWAYS"/>
+            <HBox fx:id="bottomPanel" managed="false" visible="false">
+                <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите текст" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="btn1" onAction="#sendMsg" text="   "/>
+            </HBox>
+        </VBox>
+        <ListView fx:id="clientList" managed="false" visible="false" maxWidth="100"></ListView>
+    </HBox>
+</VBox>
