@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee7410e5-d77f-49ad-b18e-f97272c2cc48" name="Default Changelist" comment="" />
+    <list default="true" id="ee7410e5-d77f-49ad-b18e-f97272c2cc48" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +44,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +61,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Chat_client" />
       <method v="2">
@@ -65,6 +72,10 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.Chat_client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
@@ -83,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581670364983</updated>
       <workItem from="1581670368310" duration="1102000" />
+      <workItem from="1582629559379" duration="1800000" />
     </task>
     <servers />
   </component>
@@ -90,21 +102,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="916" height="281" key="GridCell.Tab.0.bottom" timestamp="1581671632266">
+    <state x="828" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582630565045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
-    <state width="916" height="281" key="GridCell.Tab.0.center" timestamp="1581671632266">
+    <state x="828" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582630565045" />
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1582631513470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
-    <state width="916" height="281" key="GridCell.Tab.0.left" timestamp="1581671632266">
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582631513470" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1582631513470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
-    <state width="916" height="281" key="GridCell.Tab.0.right" timestamp="1581671632266">
+    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582631513470" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1582631513469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581671632266" />
+    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582631513469" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1582631513470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582631513470" />
+    <state x="880" y="100" key="SettingsEditor" timestamp="1582630551562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="880" y="100" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582630551562" />
+    <state x="1147" y="157" width="586" height="732" key="find.popup" timestamp="1582630404268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1147" y="157" width="586" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582630404268" />
   </component>
 </project>

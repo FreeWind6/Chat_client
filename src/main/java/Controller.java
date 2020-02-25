@@ -20,6 +20,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import org.springframework.security.crypto.encrypt.Encryptors;
 import org.springframework.security.crypto.encrypt.TextEncryptor;
+import org.springframework.security.crypto.keygen.KeyGenerators;
 
 import java.awt.*;
 import java.io.DataInputStream;
@@ -78,9 +79,8 @@ public class Controller {
     VBox messageBox;
     ArrayList arrayListMessage = new ArrayList();
     final String password = "MZygpewJsCpRrfOr";
-    //    String salt = KeyGenerators.string().generateKey();
-    String salt = "6eda6a88846ad4cb";
-    TextEncryptor encryptors = Encryptors.text(password, salt);
+    String salt1 = KeyGenerators.string().generateKey();
+    TextEncryptor encryptors1 = Encryptors.text(password, salt1);
 
     public void setMsg(String str) {
         Platform.runLater(new Runnable() {
@@ -169,7 +169,8 @@ public class Controller {
                     try {
                         while (true) {
                             String str = in.readUTF();
-                            str = encryptors.decrypt(str);
+                            TextEncryptor encryptors2 = Encryptors.text(password, str.substring(0, 16));
+                            str = encryptors2.decrypt(str.substring(16));
                             if (str.startsWith("/authok")) {
                                 String[] mass = str.split(" ");
                                 nick = mass[1];
@@ -182,7 +183,8 @@ public class Controller {
 
                         while (true) {
                             String str = in.readUTF();
-                            str = encryptors.decrypt(str);
+                            TextEncryptor encryptors2 = Encryptors.text(password, str.substring(0, 16));
+                            str = encryptors2.decrypt(str.substring(16));
                             if (str.equals("/serverclosed")) break;
                             if (str.startsWith("/clientlist")) {
                                 String[] tokens = str.split(" ");
@@ -232,7 +234,8 @@ public class Controller {
     public void sendMsg() {
         try {
             String textToEncrypt = textField.getText();
-            String cipherText = encryptors.encrypt(textToEncrypt);
+            String cipherText = encryptors1.encrypt(textToEncrypt);
+            cipherText = salt1 + "" + cipherText;
             out.writeUTF(cipherText);
             textField.clear();
             textField.requestFocus();
@@ -247,7 +250,8 @@ public class Controller {
         }
         try {
             String textToEncrypt = "/auth " + loginField.getText() + " " + passwordField.getText();
-            String cipherText = encryptors.encrypt(textToEncrypt);
+            String cipherText = encryptors1.encrypt(textToEncrypt);
+            cipherText = salt1 + "" + cipherText;
             out.writeUTF(cipherText);
             loginField.clear();
             passwordField.clear();
@@ -324,7 +328,8 @@ public class Controller {
         try {
             if (out != null) {
                 String textToEncrypt = "/end";
-                String cipherText = encryptors.encrypt(textToEncrypt);
+                String cipherText = encryptors1.encrypt(textToEncrypt);
+                cipherText = salt1 + "" + cipherText;
                 out.writeUTF(cipherText);
             }
         } catch (IOException e) {
@@ -353,7 +358,8 @@ public class Controller {
     public void logOut(ActionEvent actionEvent) {
         try {
             String textToEncrypt = "/end";
-            String cipherText = encryptors.encrypt(textToEncrypt);
+            String cipherText = encryptors1.encrypt(textToEncrypt);
+            cipherText = salt1 + "" + cipherText;
             out.writeUTF(cipherText);
         } catch (IOException e) {
             e.printStackTrace();
