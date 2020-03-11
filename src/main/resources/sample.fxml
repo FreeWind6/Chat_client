@@ -24,7 +24,7 @@
             <MenuItem mnemonicParsing="false" text="Commands" fx:id="command" onAction="#commands"/>
             <MenuItem mnemonicParsing="false" text="Clear window" fx:id="clear" onAction="#clearWindow"/>
             <MenuItem mnemonicParsing="false" text="Save messages" fx:id="saveMsg" onAction="#saveMsg"/>
-            <MenuItem mnemonicParsing="false" text="Log out" fx:id="logOut" onAction="#logOut" visible="false"/>
+            <MenuItem mnemonicParsing="false" text="Log out" fx:id="logOut" onAction="#dispose" visible="false"/>
         </Menu>
         <Menu mnemonicParsing="false" text="About">
             <MenuItem mnemonicParsing="false" text="About" fx:id="about" onAction="#about"/>

@@ -323,7 +323,7 @@ public class Controller {
         }
     }
 
-    public void Dispose() {
+    public void dispose() {
         System.out.println("Отправляем сообщение на сервер о завершении работы");
         try {
             if (out != null) {
@@ -353,16 +353,5 @@ public class Controller {
                 "Ваш ник: " + this.nick);
         fileWriter.close();
         alertMsg("История сохранена в файл text.txt и находится в той же директории что и исходный файл.", "Файл записан!", Alert.AlertType.INFORMATION);
-    }
-
-    public void logOut(ActionEvent actionEvent) {
-        try {
-            String textToEncrypt = "/end";
-            String cipherText = encryptors1.encrypt(textToEncrypt);
-            cipherText = salt1 + "" + cipherText;
-            out.writeUTF(cipherText);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
