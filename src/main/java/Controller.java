@@ -92,9 +92,6 @@ public class Controller {
                 time = new Label("\n" + simpleDateFormat.format(date) + "  ", message);
                 time.setFont(new Font(10));
                 arrayListMessage.add(message.getText() + time.getText().replaceAll("\n", " "));
-/*                BackgroundImage backgroundImage = new BackgroundImage(new Image("file:src/img/code.png"), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
-                Background background = new Background(backgroundImage);
-                messagesView.setBackground(background);*/
                 // Стартовый цвет до авторизации
                 color = Color.GRAY;
                 messageBox = new VBox(time);
@@ -324,9 +321,9 @@ public class Controller {
     }
 
     public void dispose() {
-        System.out.println("Отправляем сообщение на сервер о завершении работы");
         try {
-            if (out != null) {
+            if (out != null && isAuthorized) {
+                System.out.println("Отправляем сообщение на сервер о завершении работы");
                 String textToEncrypt = "/end";
                 String cipherText = encryptors1.encrypt(textToEncrypt);
                 cipherText = salt1 + "" + cipherText;
