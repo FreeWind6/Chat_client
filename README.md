@@ -1,4 +1,6 @@
 # Chat Client
+![build](https://img.shields.io/badge/build-passing-green)
+
 Клиент чата подключаемого по адресу localhost:8189
 
 ![screenshot chat](https://github.com/FreeWind6/Chat_client/blob/master/inform.png)
